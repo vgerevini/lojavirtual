@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace TVG.LojaVirtual.Web
@@ -13,17 +9,51 @@ namespace TVG.LojaVirtual.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //1 - Inicio: "/"
+            routes.MapRoute(null,
+                "",
+                new
+                {
+                    controller = "Vitrine",
+                    action = "ListaProdutos",
+                    categoria = (string)null,
+                    pagina = 1
+                });
+
+            // 2 - Todas as categorias da pagina 2 "/Pagina2"
+            routes.MapRoute(null,
+                "Pagina{pagina}",
+                new
+                {
+                    controller = "Vitrine",
+                    action = "ListaProdutos",
+                    categoria = (string)null
+                },
+                new { pagina = @"\d+" });
+
+            //3 - Primeira página da categoria de futebol "/Futebol"
             routes.MapRoute(
                 name: null,
-                url: "Pagina{pagina}",
-                defaults: new { controller = "Vitrine", action = "ListaProdutos" }
+                url: "{categoria}",
+                defaults: new
+                {
+                    controller = "Vitrine",
+                    action = "ListaProdutos",
+                    pagina = 1
+                }
                 );
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Vitrine", action = "ListaProdutos", id = UrlParameter.Optional }
-            );
+            //4 - Pagina 2 da categoria de futebol "/Gutebol/Pagina 2"
+            routes.MapRoute(null,
+                "{categoria}Pagina{pagina}",
+                new
+                {
+                    controller = "Vitrine",
+                    action = "ListaProdutos"
+                },
+                new { pagina = @"\d+" });
+
+            routes.MapRoute(null, "{controller}/action");
         }
     }
 }
