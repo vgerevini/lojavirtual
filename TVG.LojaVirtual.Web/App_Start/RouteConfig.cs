@@ -45,7 +45,7 @@ namespace TVG.LojaVirtual.Web
 
             //4 - Pagina 2 da categoria de futebol "/Gutebol/Pagina 2"
             routes.MapRoute(null,
-                "{categoria}Pagina{pagina}",
+                "{categoria}/Pagina{pagina}",
                 new
                 {
                     controller = "Vitrine",
