@@ -12,11 +12,13 @@ namespace TVG.LojaVirtual.Dominio.Repositorio
     public class EFDBContext : DbContext
     {
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Administrador> Administrador { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Produto>().ToTable("Produtos");
+            modelBuilder.Entity<Administrador>().ToTable("Administrador");
             base.OnModelCreating(modelBuilder);
         }
     }
