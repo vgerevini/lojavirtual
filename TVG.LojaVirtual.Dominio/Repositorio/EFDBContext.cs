@@ -18,7 +18,7 @@ namespace TVG.LojaVirtual.Dominio.Repositorio
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Produto>().ToTable("Produtos");
-            modelBuilder.Entity<Administrador>().ToTable("Administrador");
+            modelBuilder.Entity<Administrador>().ToTable("Administradores");
             base.OnModelCreating(modelBuilder);
         }
     }
