@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TVG.LojaVirtual.Dominio.Entidade;
 using TVG.LojaVirtual.Dominio.Repositorio;
 using TVG.LojaVirtual.Web.Models;
 
@@ -40,6 +41,20 @@ namespace TVG.LojaVirtual.Web.Controllers
             
 
             return View(model);
+        }
+
+        public FileContentResult ObterImagem(int produtoId)
+        {
+            _repositorio = new ProdutosRepositorio();
+
+            Produto prod = _repositorio.Produtos.FirstOrDefault(p => p.ProdutoId == produtoId);
+
+            if (prod != null)
+            {
+                return File(prod.Imagem, prod.ImagemMimeType);
+            }
+
+            return null;
         }
     }
 }

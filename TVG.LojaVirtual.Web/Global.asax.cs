@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using TVG.LojaVirtual.Dominio.Entidade;
+using TVG.LojaVirtual.Web.Infraestrutura;
 
 namespace TVG.LojaVirtual.Web
 {
@@ -13,6 +15,8 @@ namespace TVG.LojaVirtual.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            ModelBinders.Binders.Add(typeof(Carrinho), new CarrinhoModelBinder());
         }
     }
 }
