@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.ModelBinding;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using TVG.LojaVirtual.Dominio.Entidade;
 
 namespace TVG.LojaVirtual.Web.Infraestrutura

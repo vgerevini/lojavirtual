@@ -6755,3 +6755,8 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+a.deco-none {
+    color: #000000;
+    text-decoration: none;
+}

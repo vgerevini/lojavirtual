@@ -16,6 +16,11 @@ namespace TVG.LojaVirtual.Dominio.Repositorio
             get { return _context.Produtos; }
         }
 
+        public Produto ObterProduto(int id)
+        {
+            return _context.Produtos.Single(p => p.ProdutoId == id);
+        }
+
         //Salvar produto - alterar produto
         public void Salvar(Produto produto)
         {
