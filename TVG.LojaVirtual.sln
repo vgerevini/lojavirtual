@@ -1,13 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.Dominio", "TVG.LojaVirtual.Dominio\TVG.LojaVirtual.Dominio.csproj", "{A2C48A1B-4619-4788-B75B-E6E6D9C15026}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.Web", "TVG.LojaVirtual.Web\TVG.LojaVirtual.Web.csproj", "{4DFABABD-AF33-4757-B8DC-632C28A5E398}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.UnitTest", "TVG.LojaVirtual.UnitTest\TVG.LojaVirtual.UnitTest.csproj", "{31AE0E31-6FCD-436B-931E-CBEA182AE215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.Web.V2", "TVG.LojaVirtual.Web.V2\TVG.LojaVirtual.Web.V2.csproj", "{206C60D9-65E9-4C50-8191-628BE14C2799}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tabelas", "Tabelas", "{E3B2676A-37A7-488B-A702-6E7E4D4ADF9E}"
+	ProjectSection(SolutionItems) = preProject
+		Categoria.sql = Categoria.sql
+		Linha.sql = Linha.sql
+		Marca.sql = Marca.sql
+		C:\Users\Vitor\Desktop\Produto.sql = C:\Users\Vitor\Desktop\Produto.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{EB6208FA-FC53-4A48-91D3-F7006D855A81}"
+	ProjectSection(SolutionItems) = preProject
+		ClubesInternacionais.sql = ClubesInternacionais.sql
+		ClubesNacionais.sql = ClubesNacionais.sql
+		MarcaVitrine.sql = MarcaVitrine.sql
+		Selecoes.sql = Selecoes.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +47,16 @@ Global
 		{31AE0E31-6FCD-436B-931E-CBEA182AE215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31AE0E31-6FCD-436B-931E-CBEA182AE215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31AE0E31-6FCD-436B-931E-CBEA182AE215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206C60D9-65E9-4C50-8191-628BE14C2799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206C60D9-65E9-4C50-8191-628BE14C2799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206C60D9-65E9-4C50-8191-628BE14C2799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206C60D9-65E9-4C50-8191-628BE14C2799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3B2676A-37A7-488B-A702-6E7E4D4ADF9E} = {3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}
+		{EB6208FA-FC53-4A48-91D3-F7006D855A81} = {3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}
 	EndGlobalSection
 EndGlobal
