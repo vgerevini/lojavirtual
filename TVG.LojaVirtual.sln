@@ -11,23 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.UnitTest", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVG.LojaVirtual.Web.V2", "TVG.LojaVirtual.Web.V2\TVG.LojaVirtual.Web.V2.csproj", "{206C60D9-65E9-4C50-8191-628BE14C2799}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tabelas", "Tabelas", "{E3B2676A-37A7-488B-A702-6E7E4D4ADF9E}"
-	ProjectSection(SolutionItems) = preProject
-		Categoria.sql = Categoria.sql
-		Linha.sql = Linha.sql
-		Marca.sql = Marca.sql
-		C:\Users\Vitor\Desktop\Produto.sql = C:\Users\Vitor\Desktop\Produto.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{EB6208FA-FC53-4A48-91D3-F7006D855A81}"
-	ProjectSection(SolutionItems) = preProject
-		ClubesInternacionais.sql = ClubesInternacionais.sql
-		ClubesNacionais.sql = ClubesNacionais.sql
-		MarcaVitrine.sql = MarcaVitrine.sql
-		Selecoes.sql = Selecoes.sql
-	EndProjectSection
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TVG.LojaVirtual.Database", "TVG.LojaVirtual.Scripts\TVG.LojaVirtual.Database.sqlproj", "{883C47E8-2394-44A2-8FC4-B56FFB2E735F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,12 +35,14 @@ Global
 		{206C60D9-65E9-4C50-8191-628BE14C2799}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{206C60D9-65E9-4C50-8191-628BE14C2799}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{206C60D9-65E9-4C50-8191-628BE14C2799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883C47E8-2394-44A2-8FC4-B56FFB2E735F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{E3B2676A-37A7-488B-A702-6E7E4D4ADF9E} = {3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}
-		{EB6208FA-FC53-4A48-91D3-F7006D855A81} = {3BB5AE8F-DD55-4DEC-B53C-E6298E2F72B0}
 	EndGlobalSection
 EndGlobal

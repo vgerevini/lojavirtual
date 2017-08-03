@@ -19,6 +19,13 @@ namespace TVG.LojaVirtual.Dominio.Repositorio
         public DbSet<ClubesNacionais> ClubesNacionais { get; set; }
         public DbSet<ClubesInternacionais> ClubesInternacionais { get; set; }
         public DbSet<Selecoes> Selecoes { get; set; }
+        public DbSet<FaixaEtaria> FaixaEtaria { get; set; }
+        public DbSet<Genero> Genero { get; set; }
+        public DbSet<Grupo> Grupo { get; set; }
+        public DbSet<SubGrupo> SubGrupo { get; set; }
+        //public DbSet<Linha> Linha { get; set; }
+        public DbSet<Marca> Marca { get; set; }
+        public DbSet<Modalidade> Modalidade { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

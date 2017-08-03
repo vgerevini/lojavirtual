@@ -36,5 +36,30 @@ namespace TVG.LojaVirtual.Dominio.Repositorio
         {
             return _context.Selecoes.OrderBy(c => c.LinhaDescricao);
         }
+
+        //public IEnumerable<Genero> ObterGeneros()
+        //{
+        //    return _context.Genero.OrderBy(g => g.GeneroDescricao);
+        //}
+
+        //public IEnumerable<FaixaEtaria> ObterFaixasEtarias()
+        //{
+        //    return _context.FaixaEtaria.OrderBy(f => f.FaixaEtariaDescricao);
+        //}
+
+        //public IEnumerable<Grupo> ObterGrupos()
+        //{
+        //    return _context.Grupo.OrderBy(g => g.GrupoDescricao);
+        //}
+
+        //public IEnumerable<SubGrupo> ObterSubGrupos()
+        //{
+        //    return _context.SubGrupo.OrderBy(s => s.SubGrupoDescricao);
+        //}
+
+        //public IEnumerable<Modalidade> ObterModalidades()
+        //{
+        //    return _context.Modalidade.OrderBy(m => m.ModalidadeDescricao);
+        //}
     }
 }
